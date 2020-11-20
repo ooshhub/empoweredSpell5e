@@ -243,7 +243,7 @@ const empoweredSpell5e = (() => { // eslint-disable-line no-unused-vars
             bodyS.push(bodySTop.join(''), `</tr><tr>`, bodySBot.join(''));
             bodyQ.push(bodySBot.join(''));
         }
-        if (settings.empowerMode === 'quick') { // terse table layout for 'quick' feedback mode
+        if (settings.empowerMode.search(/quick/i) !== -1) { // terse table layout for 'quick' feedback mode
             sendChat(lastPlayer, `/w ${lastPlayer} ${headerQ}${bodyQ.join('')}${footerQ}`)
         } else {sendChat(lastPlayer,`/w ${lastPlayer} ${headerS}${bodyS.join('')}${footerS}`)}
     }
