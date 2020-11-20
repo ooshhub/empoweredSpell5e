@@ -1,4 +1,4 @@
-# empoweredSpell5e
+# empoweredSpell5e v0.4.0
 API script for Roll20
 
 Listens for rolls from registered Sorcerers, and responds with Empowered Roll options. Pulls charisma_mod from the character sheet to determine maximum allowed rerolls. Automatically prompts the caster to reroll a number of dice up to maximum, automatically sorted so it suggests the lowest rolls. Manual input is possible if the lowest rolls aren't the desired discards, but AFAIK checkboxes are not possible to output from the API so "manual" must be typed into a Query input.
